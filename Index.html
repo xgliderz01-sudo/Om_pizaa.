@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OM PIZZA BURGER CAFE - Fresh, Hot, Delicious Pizza, Burgers, Pasta, Snacks & Beverages. Order now!">
+    <meta name="keywords" content="pizza, burgers, pasta, snacks, beverages, food delivery, OM PIZZA BURGER CAFE">
+    <title>OM PIZZA BURGER CAFE | Fresh • Hot • Delicious Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://via.placeholder.com/150x60/e74c3c/ffffff?text=OM+PIZZA" alt="OM PIZZA BURGER CAFE Logo">
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="https://wa.me/919999221430?text=Hello,%20I%20want%20to%20order%20from%20OM%20PIZZA%20BURGER%20CAFE" class="btn-order">Order Now</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-up">OM PIZZA BURGER CAFE</h1>
+            <p class="hero-tagline animate-fade-up">Fresh • Hot • Delicious Pizza</p>
+            <div class="hero-buttons animate-fade-up">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="https://wa.me/919999221430?text=Hello,%20I%20want%20to%20order%20from%20OM%20PIZZA%20BURGER%20CAFE" class="btn btn-secondary">
+                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="https://via.placeholder.com/600x500/2c3e50/ffffff?text=Fresh+Pizza" alt="About OM PIZZA BURGER CAFE">
+                    <div class="about-badge">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span>Fresh Daily</span>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <span class="section-subtitle">About Us</span>
+                    <h2 class="section-title">Welcome to OM PIZZA BURGER CAFE</h2>
+                    <p class="about-description">
+                        OM PIZZA BURGER CAFE is a fast-growing local pizza spot serving freshly baked pizzas, burgers, pasta, snacks and beverages. We focus on quality ingredients, affordable prices and quick service.
+                    </p>
+                    <p class="about-description">
+                        Perfect place for students, families and pizza lovers. Our commitment to excellence and customer satisfaction has made us a favorite destination for food enthusiasts.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Fresh Ingredients</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Affordable Prices</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quick Service</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hygienic Kitchen</span>
+                        </div>
+                    </div>
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Menu</span>
+                <h2 class="section-title">Delicious Food Items</h2>
+                <p class="section-description">Explore our wide variety of mouth-watering dishes</p>
+            </div>
+
+            <!-- Menu Search and Filter -->
+            <div class="menu-controls" data-aos="fade-up">
+                <div class="menu-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="menuSearch" placeholder="Search for dishes...">
+                </div>
+                <div class="menu-filter">
+                    <button class="filter-btn active" data-filter="all">All Items</button>
+                    <button class="filter-btn" data-filter="veg">
+                        <span class="veg-badge"></span> Veg Only
+                    </button>
+                    <button class="filter-btn" data-filter="non-veg">
+                        <span class="non-veg-badge"></span> Non-Veg
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Categories -->
+            <div class="menu-categories" data-aos="fade-up">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="veg-single-topping">Veg Single Topping</button>
+                <button class="category-btn" data-category="veg-double-topping">Veg Double Topping</button>
+                <button class="category-btn" data-category="triple-topping">Triple Topping</button>
+                <button class="category-btn" data-category="multiple-toppings">Multiple Toppings</button>
+                <button class="category-btn" data-category="veg1">Veg 1</button>
+                <button class="category-btn" data-category="veg2">Veg 2</button>
+                <button class="category-btn" data-category="veg3">Veg 3</button>
+                <button class="category-btn" data-category="simply-veg">Simply Veg</button>
+                <button class="category-btn" data-category="indian">Taste of Indian</button>
+                <button class="category-btn" data-category="non-veg">Non Veg Pizza</button>
+                <button class="category-btn" data-category="combos">Combos</button>
+                <button class="category-btn" data-category="meals">Meals</button>
+                <button class="category-btn" data-category="starter">Starter</button>
+                <button class="category-btn" data-category="pasta">Pasta</button>
+                <button class="category-btn" data-category="burgers">Burgers</button>
+                <button class="category-btn" data-category="sandwiches">Sandwiches</button>
+                <button class="category-btn" data-category="snacks">Snacks</button>
+                <button class="category-btn" data-category="roll">Roll</button>
+                <button class="category-btn" data-category="wraps">Wraps</button>
+                <button class="category-btn" data-category="dessert">Dessert</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Special Offers</span>
+                <h2 class="section-title">Today's Best Deals</h2>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card" data-aos="zoom-in">
+                    <img src="https://via.placeholder.com/400x300/e74c3c/ffffff?text=Combo+Offer" alt="Combo Offer">
+                    <div class="offer-content">
+                        <h3>4 Pizza Combo Deal</h3>
+                        <p>Get 4 amazing pizzas at unbeatable prices</p>
+                        <span class="offer-price">Starting from ₹340</span>
+                    </div>
+                </div>
+                <div class="offer-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/400x300/27ae60/ffffff?text=Family+Pack" alt="Family Pack">
+                    <div class="offer-content">
+                        <h3>Family Pack Special</h3>
+                        <p>Perfect for family gatherings</p>
+                        <span class="offer-price">₹625 Only</span>
+                    </div>
+                </div>
+                <div class="offer-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/400x300/f39c12/ffffff?text=Meal+Combo" alt="Meal Combo">
+                    <div class="offer-content">
+                        <h3>Meal Combo Offers</h3>
+                        <p>Pizza + Burger + Drink combos</p>
+                        <span class="offer-price">From ₹200</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Gallery</span>
+                <h2 class="section-title">Food Gallery</h2>
+                <p class="section-description">A visual feast of our delicious offerings</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/400x400/e74c3c/ffffff?text=Pizza+1" alt="Pizza">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/400x400/27ae60/ffffff?text=Burger" alt="Burger">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/400x400/f39c12/ffffff?text=Pasta" alt="Pasta">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://via.placeholder.com/400x400/3498db/ffffff?text=Pizza+2" alt="Pizza">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://via.placeholder.com/400x400/9b59b6/ffffff?text=Snacks" alt="Snacks">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://via.placeholder.com/400x400/e67e22/ffffff?text=Dessert" alt="Dessert">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card" data-aos="fade-up">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best pizza in the area! The taste is absolutely amazing and the prices are very reasonable. Highly recommended!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Amazing taste and great prices. The combo offers are perfect for family dinners. Quick delivery and fresh food every time!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <span>Food Blogger</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="review-text">"Perfect place for quick bites. Love their burgers and pasta. The garlic bread is to die for!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Amit Patel</h4>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Excellent service and delicious food! Their paneer tikka pizza is my absolute favorite. Will definitely order again!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sneha Verma</h4>
+                            <span>Office Professional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Find Us</span>
+                <h2 class="section-title">Visit Our Location</h2>
+            </div>
+            <div class="location-content">
+                <div class="map-container" data-aos="fade-right">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2074!2d77.3894!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzUwLjAiTiA3N8KwMjMnMjEuOCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="location-info" data-aos="fade-left">
+                    <h3>OM PIZZA BURGER CAFE</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Location: Near You</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Opening Hours: 10:00 AM – 8:00 PM</span>
+                    </div>
+                    <a href="https://share.google/HhAsajNdKLgJ86v2p" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card" data-aos="zoom-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+91 99992 21430</p>
+                    <a href="tel:+919999221430" class="btn btn-secondary">Call Now</a>
+                </div>
+                <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp Orders</h3>
+                    <p>+91 99992 21430</p>
+                    <a href="https://wa.me/919999221430?text=Hello,%20I%20want%20to%20order%20from%20OM%20PIZZA%20BURGER%20CAFE" class="btn btn-secondary">Order on WhatsApp</a>
+                </div>
+                <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Opening Hours</h3>
+                    <p>10:00 AM – 8:00 PM</p>
+                    <p class="contact-note">Open Daily</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>OM PIZZA BURGER CAFE</h3>
+                    <p>Serving fresh, hot, and delicious pizza, burgers, pasta, snacks, and beverages. Your satisfaction is our priority!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/919999221430"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 99992 21430</li>
+                        <li><i class="fab fa-whatsapp"></i> +91 99992 21430</li>
+                        <li><i class="fas fa-clock"></i> 10:00 AM – 8:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Specialties</h4>
+                    <ul>
+                        <li>Fresh Pizzas</li>
+                        <li>Juicy Burgers</li>
+                        <li>Creamy Pasta</li>
+                        <li>Tasty Snacks</li>
+                        <li>Refreshing Beverages</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OM PIZZA BURGER CAFE. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for Food Lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919999221430?text=Hello,%20I%20want%20to%20order%20from%20OM%20PIZZA%20BURGER%20CAFE" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
